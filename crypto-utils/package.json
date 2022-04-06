@@ -1,0 +1,26 @@
+{
+  "name": "crypto-utils",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify index.js -s util -o ./dist/util.js && minify ./dist/util.js > ./dist/util.min.js",
+    "tron-payments": "browserify tron-payments.js -s tronPayments -o ./dist/tron-payments.js && minify ./dist/tron-payments.js > ./dist/tron-payments.min.js",
+    "multicall": "browserify multicall.js -s multicall -o ./dist/multicall.js && minify ./dist/multicall.js > ./dist/multicall.min.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@faast/tron-payments": "^4.7.0",
+    "bchaddrjs": "^0.5.2",
+    "bip32": "2.0.5",
+    "bip39": "^3.0.4",
+    "bitcore-mnemonic": "^8.25.25",
+    "ethereumjs-util": "^7.1.4",
+    "ethereumjs-wallet": "^1.0.2",
+    "ethers-multicall": "^0.2.2",
+    "hdkey": "^2.0.1",
+    "minify": "^8.0.4"
+  }
+}

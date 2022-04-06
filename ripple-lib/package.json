@@ -1,0 +1,17 @@
+{
+  "name": "ripple-lib",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify index.js -s ripple -o ./dist/ripple.1.10.0.js && minify ./dist/ripple.1.10.0.js > ./dist/ripple.1.10.0.min.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^17.0.0",
+    "minify": "^8.0.4",
+    "ripple-lib": "^1.10.0"
+  }
+}
